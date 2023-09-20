@@ -7,23 +7,25 @@ Complete the solution so that it reverses the string passed into it.
         'word'   =>  'drow'
 */
 public class ReversedStrings {
-    public static String solution(String str) {
 
-        // -----------------------
-        return new StringBuilder(str).reverse().toString();
-
-
-
-        // -----------------------
-//        String newStr="";
-//
-//        for(int i = str.length()-1; i >= 0; i--){
-//            newStr += str.charAt(i);
-//        }
-//
-//        return newStr;
+    public static void main(String[] args) {
+        System.out.println("solutionVersionOne(\"world\") = " + solutionVersionOne("world"));
+        System.out.println("solutionVersionTwo(\"world\") = " + solutionVersionTwo("world"));
     }
 
+    public static String solutionVersionOne(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
+
+    public static String solutionVersionTwo(String str) {
+        String newStr="";
+
+        for(int i = str.length()-1; i >= 0; i--){
+            newStr += str.charAt(i);
+        }
+
+        return newStr;
+    }
 
     private ReversedStrings() {
         throw new IllegalStateException("Utility class");

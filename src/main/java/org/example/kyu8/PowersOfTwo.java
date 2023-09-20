@@ -14,11 +14,10 @@ n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
  */
 
 public class PowersOfTwo {
+
     public static void main(String[] args) {
         System.out.println("powersOfTwoVersionOne(5) = " + Arrays.toString(powersOfTwoVersionOne(5)));
-
         System.out.println("powersOfTwoVersionTwo(5) = " + Arrays.toString(powersOfTwoVersionTwo(5)));
-
         System.out.println("powersOfTwoVersionThree(5) = " + Arrays.toString(powersOfTwoVersionThree(5)));
     }
 
