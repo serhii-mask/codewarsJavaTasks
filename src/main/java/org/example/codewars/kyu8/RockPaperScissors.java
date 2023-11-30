@@ -1,4 +1,4 @@
-package org.example.kyu8;
+package org.example.codewars.kyu8;
 
 /*
 Let's play! You have to return which player won! In case of a draw return Draw!.
