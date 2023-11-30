@@ -19,11 +19,11 @@ public class SumOfPositive {
         System.out.println("sumVersionTwo(arr) = " + sumVersionTwo(arr));
     }
 
-    public static int sumVersionOne(int[] arr){
+    private static int sumVersionOne(int[] arr){
         return Arrays.stream(arr).filter(v -> v > 0).sum();
     }
 
-    public static int sumVersionTwo(int[] arr){
+    private static int sumVersionTwo(int[] arr){
         int result = 0;
 
         for (int i : arr) {

@@ -21,11 +21,11 @@ public class PowersOfTwo {
         System.out.println("powersOfTwoVersionThree(5) = " + Arrays.toString(powersOfTwoVersionThree(5)));
     }
 
-    static long[] powersOfTwoVersionOne(int n) {
+    private static long[] powersOfTwoVersionOne(int n) {
         return rangeClosed(0, n).mapToLong(i -> (long) Math.pow(2, i)).toArray();
     }
 
-    public static long[] powersOfTwoVersionTwo(int n){
+    private static long[] powersOfTwoVersionTwo(int n){
         long[] arr = new long[n + 1];
 
         for (int i = 0; i < arr.length; i++) {
@@ -35,7 +35,7 @@ public class PowersOfTwo {
         return arr;
     }
 
-    public static long[] powersOfTwoVersionThree(int n) {
+    private static long[] powersOfTwoVersionThree(int n) {
         long[] ret = new long[n + 1];
 
         for (int i = 0; i <= n; i++) {

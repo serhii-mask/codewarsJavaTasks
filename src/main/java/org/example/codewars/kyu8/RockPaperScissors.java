@@ -18,7 +18,7 @@ public class RockPaperScissors {
         System.out.println("rpsVersionTwo(\"paper\", \"paper\") = " + rpsVersionTwo("paper", "paper"));
     }
 
-    public static String rpsVersionOne(String p1, String p2) {
+    private static String rpsVersionOne(String p1, String p2) {
         if(p1 == p2) {
             return "Draw!";
         }
@@ -28,7 +28,7 @@ public class RockPaperScissors {
         return "Player " + p + " won!";
     }
 
-    public static String rpsVersionTwo(String p1, String p2) {
+    private static String rpsVersionTwo(String p1, String p2) {
 
         if (p1 == p2) {
             return "Draw!";

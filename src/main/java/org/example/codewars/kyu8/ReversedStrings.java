@@ -13,11 +13,11 @@ public class ReversedStrings {
         System.out.println("solutionVersionTwo(\"world\") = " + solutionVersionTwo("world"));
     }
 
-    public static String solutionVersionOne(String str) {
+    private static String solutionVersionOne(String str) {
         return new StringBuilder(str).reverse().toString();
     }
 
-    public static String solutionVersionTwo(String str) {
+    private static String solutionVersionTwo(String str) {
         String newStr="";
 
         for(int i = str.length()-1; i >= 0; i--){
